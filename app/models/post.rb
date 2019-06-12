@@ -4,4 +4,5 @@ class Post < ApplicationRecord
 
 	# validates_presence_of :title, :body
 	# we can add many attributes as we want in one line.
+	# ex: validates_presence_of :title, :body, :anotherAttribute
 end
