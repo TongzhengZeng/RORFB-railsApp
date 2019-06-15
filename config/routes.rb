@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
-  resources :costs
-  resources :hosts
+  devise_for :users
+  resources :topics
   # For details on the DSL available within this file, 
   # see http://guides.rubyonrails.org/routing.html
 
-  resources :posts
+ # resources :posts
   # get 'posts', to: 'posts#index'
   # get 'show', to: 'posts#show'
-  
-  root to: 'posts#index' 
+  root to: 'topics#index'
+#  root to: 'posts#index' 
   #now localhost:3000 page turns to view index page.
 
   # get 'bababooey', to: 'posts#bababooey'
